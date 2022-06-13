@@ -1,0 +1,109 @@
+:root {
+   --color1:#2196F3;
+   --color-bg:#2F303A;
+   --color-bg2: #fff;
+   --color-text: #757575;
+
+}
+
+* {
+    color: rgb(0, 0, 0);
+}
+
+body {
+    font-family: 'roboto';
+    width: 1600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+/* footer */
+
+.logo {
+    font-size: 26px;
+}
+
+.logo span {
+    color: var(--color1);
+}
+
+.header {
+    font-size: 14px;
+    background-color: var(--color-bg2);
+}
+
+
+.menu-link:hover,
+.contact-link:hover {
+    color: var(--color1);
+}
+
+.contact-link {
+    color: var(--color-text);
+}
+
+/* section studio */
+
+.studio {
+    background-color: #2F303A;
+    padding: 200px 452px;    
+}
+
+h1 {
+    font-size: 44px;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.btn-order {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    background-color: var(--color1);
+}
+
+/* about */
+
+.about {
+    font-size: 14px;
+}
+
+.about-title {
+    width: 270px;
+    height: 101px;
+}
+
+.about-title h3 {    
+    text-transform: uppercase;
+}
+
+.about-title p {
+    color: var(--color-text);
+}
+
+/* portfolio */
+
+.fotowork {
+    width: 370px;
+    height: 294px;
+}
+
+
+
+
+
