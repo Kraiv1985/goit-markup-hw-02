@@ -6,10 +6,6 @@
 
 }
 
-* {
-    color: rgb(0, 0, 0);
-}
-
 body {
     font-family: 'roboto';
     width: 1600px;
@@ -25,9 +21,10 @@ ul {
 
 h2 {
     font-size: 36px;
+    text-align: center;
 }
 
-/* footer */
+/* header end logo footer*/
 
 .logo {
     font-size: 26px;
@@ -42,13 +39,18 @@ h2 {
     background-color: var(--color-bg2);
 }
 
+.menu a {
+    color: black;
+}
+
 
 .menu-link:hover,
 .contact-link:hover {
     color: var(--color1);
 }
 
-.contact-link {
+.contact-link,
+.adress-link {
     color: var(--color-text);
 }
 
@@ -81,6 +83,8 @@ h1 {
 
 .about {
     font-size: 14px;
+    background-color: var(--color-bg2);
+    
 }
 
 .about-title {
@@ -96,12 +100,57 @@ h1 {
     color: var(--color-text);
 }
 
-/* portfolio */
+/* work */
 
 .fotowork {
     width: 370px;
     height: 294px;
 }
+
+/* contact */
+
+.contactfoto {
+    width: 270px;
+    height: 260px;
+}
+
+.contact-title {
+    font-size: 16px;
+}
+
+.contact-title p {
+    color: var(--color-text);
+    font-weight: regular;
+}
+
+
+/* footer */
+
+footer {
+    background-color: var(--color-bg);
+}
+
+/* .adress a:nth-child(1) {
+    color: #fff;
+} */
+
+/* немогу изменить цвет адреса на белый */
+.adress-link {
+    color: #fff;
+}
+
+.adress a {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 25px;
+    color: var(--color-text);
+}
+
+
+
+
+
+
 
 
 
