@@ -1,13 +1,17 @@
+
 :root {
    --color1:#2196F3;
    --color-bg:#2F303A;
    --color-bg2: #fff;
    --color-text: #757575;
 
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-logo: 'Raleway', sans-serif;
+
 }
 
 body {
-    font-family: 'roboto';
+    font-family: var(--font-family-primary);
     width: 1600px;
 }
 
@@ -28,6 +32,9 @@ h2 {
 
 .logo {
     font-size: 26px;
+    font-family: var(--font-family-logo);
+    font-weight: 700;
+    color: black;
 }
 
 .logo span {
@@ -76,6 +83,8 @@ h1 {
     color: #fff;
     letter-spacing: 2px;
     border-radius: 4px;
+    border: none;
+    cursor: pointer;
     background-color: var(--color1);
 }
 
@@ -98,6 +107,7 @@ h1 {
 
 .about-title p {
     color: var(--color-text);
+    font-weight: regular;
 }
 
 /* work */
@@ -130,21 +140,53 @@ footer {
     background-color: var(--color-bg);
 }
 
-/* .adress a:nth-child(1) {
-    color: #fff;
-} */
 
-/* немогу изменить цвет адреса на белый */
+
+
+
+
+/* немогу изменить цвет адреса (там где ссылка на карту) на белый */
 .adress-link {
-    color: #fff;
-}
-
-.adress a {
     font-size: 14px;
     font-style: normal;
-    line-height: 25px;
+    line-height: 1.40;
     color: var(--color-text);
 }
+
+.adress-link li:first-child {
+    color: var(--color-bg2);
+}
+
+.buttons {
+    background-color: var(--color-bg2);
+}
+
+
+.btn {
+    cursor: pointer;
+    padding: 12px 22px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: var(--color1);
+}
+
+.portfolio p {
+    color: var(--color-text);
+}
+
+.portfolio-foto {
+    width: 370px;
+    height: 290px;
+}
+
+
 
 
 
