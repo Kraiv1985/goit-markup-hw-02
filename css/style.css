@@ -12,6 +12,7 @@
 
 body {
     font-family: var(--font-family-primary);
+    background-color: var(--color-bg2);
     width: 1600px;
 }
 
@@ -91,9 +92,7 @@ h1 {
 /* about */
 
 .about {
-    font-size: 14px;
-    background-color: var(--color-bg2);
-    
+    font-size: 14px;       
 }
 
 .about-title {
@@ -139,10 +138,6 @@ h1 {
 footer {
     background-color: var(--color-bg);
 }
-
-
-
-
 
 
 /* немогу изменить цвет адреса (там где ссылка на карту) на белый */
