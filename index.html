@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,21 +11,19 @@
     <title>studio</title>
 </head>
 <body>
-    <header>
-        <div class="header">            
-            <nav>
-                <a class="logo" href="#"><span>Web</span>Studio</a>
-                <ul class="menu">
-                    <li><a class="menu-link" href="index.html">Студия</a></li>
-                    <li><a class="menu-link" href="portfolio.html">Портфолио</a></li>
-                    <li><a class="menu-link" href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="contact">
-                <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <header>           
+        <nav>
+            <a class="logo" href="#"><span>Web</span>Studio</a>
+            <ul class="menu">
+                <li><a class="menu-link current" href="./index.html">Студия</a></li>
+                <li><a class="menu-link" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="menu-link" href="#">Контакты</a></li>
             </ul>
-        </div>
+        </nav>
+        <ul class="contact">
+            <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
     </header>
     <main>
         <section class="studio">            
@@ -33,7 +31,7 @@
             <button class="btn-order" type="button">Заказать услугу</button>                       
         </section>
         <section class="about">
-            <h2 hidden>Наши преимущества</H2>
+            <h2 class="visually-hidden">Наши преимущества</H2>
             <ul>
                 <li class="about-title">
                     <h3>Внимание к деталям</h3>
@@ -55,7 +53,7 @@
             </ul>   
         </section>
         <section class="work">
-            <h2>Чем мы занимаемся</h2>
+            <h2 class="h2">Чем мы занимаемся</h2>
             <ul>
                 <li><img class="fotowork" src="./images/img1.jpg" alt="работа с компьютером"></li>
                 <li><img class="fotowork" src="./images/img2.jpg" alt="работа с телефоном"></li>
@@ -63,7 +61,7 @@
             </ul>
         </section>  
         <section class="contact">
-            <h2>Наша команда</h2>
+            <h2 class="h2">Наша команда</h2>
             <div>
                 <div class="contact-title">
                     <img class="contactfoto" src="./images/igor.jpg" alt="игорь">

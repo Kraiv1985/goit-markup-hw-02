@@ -4,6 +4,9 @@
    --color-bg:#2F303A;
    --color-bg2: #fff;
    --color-text: #757575;
+   --color-black: #000000;
+   --color-white: #fff;
+   --color-btn: #F5F4FA;
 
     --font-family-primary: 'Roboto', sans-serif;
     --font-family-logo: 'Raleway', sans-serif;
@@ -13,7 +16,9 @@
 body {
     font-family: var(--font-family-primary);
     background-color: var(--color-bg2);
-    width: 1600px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--color-black);
 }
 
 a {
@@ -24,7 +29,7 @@ ul {
     list-style: none;
 }
 
-h2 {
+.h2 {
     font-size: 36px;
     text-align: center;
 }
@@ -49,40 +54,62 @@ h2 {
 
 .menu a {
     color: black;
+    font-weight: 500;
 }
 
+.contact-link {
+    font-weight: 500;
+}
 
 .menu-link:hover,
 .contact-link:hover {
     color: var(--color1);
 }
 
-.contact-link,
-.adress-link {
+.menu-link.current{
+    color: var(--color1);
+}
+
+.contact-link {
     color: var(--color-text);
 }
 
 /* section studio */
 
 .studio {
-    background-color: #2F303A;
+    background-color: var(--color-bg);
     padding: 200px 452px;    
 }
 
 h1 {
     font-size: 44px;
-    color: #fff;
+    letter-spacing: 0.06em;
+    color: var(--color-white);
     text-transform: uppercase;
     
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .btn-order {
-    width: 200px;
-    height: 50px;
+    padding: 20px 30px;
+    font-family: inherit;
     font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--color-white);
+    letter-spacing: 0.03em;
     border-radius: 4px;
     border: none;
     cursor: pointer;
@@ -91,22 +118,14 @@ h1 {
 
 /* about */
 
-.about {
-    font-size: 14px;       
-}
-
-.about-title {
-    width: 270px;
-    height: 101px;
-}
-
 .about-title h3 {    
     text-transform: uppercase;
+    font-size: 14px;
+    line-height: 13px;
 }
 
 .about-title p {
     color: var(--color-text);
-    font-weight: regular;
 }
 
 /* work */
@@ -123,13 +142,15 @@ h1 {
     height: 260px;
 }
 
-.contact-title {
+.contact h3 {
     font-size: 16px;
+    line-height: 13px;
 }
 
-.contact-title p {
+.contact p {
+    font-size: 16px;
     color: var(--color-text);
-    font-weight: regular;
+    font-weight: 400;
 }
 
 
@@ -139,17 +160,15 @@ footer {
     background-color: var(--color-bg);
 }
 
-
-/* немогу изменить цвет адреса (там где ссылка на карту) на белый */
-.adress-link {
-    font-size: 14px;
+.adress a {
     font-style: normal;
+    font-weight: 400;
     line-height: 1.40;
     color: var(--color-text);
 }
 
-.adress-link li:first-child {
-    color: var(--color-bg2);
+.adress li:first-child a{
+    color: var(--color-white);
 }
 
 .buttons {
@@ -160,16 +179,22 @@ footer {
 .btn {
     cursor: pointer;
     padding: 12px 22px;
-    background-color: #F5F4FA;
+    background-color: var(--color-btn);
     border-radius: 4px;
     border: none;
-    font-family: var(--font-family-primary);
+    font-family: inherit;
+    font-size: 16px;
     font-weight: 500;
+    letter-spacing: 0.03em;
 }
 
 .btn:hover {
-    color: #fff;
+    color: var(--color-white);
     background-color: var(--color1);
+}
+
+.portfolio-title {
+    font-size: 18px;
 }
 
 .portfolio p {
