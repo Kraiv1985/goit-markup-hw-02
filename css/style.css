@@ -17,6 +17,7 @@ body {
     font-family: var(--font-family-primary);
     background-color: var(--color-bg2);
     font-size: 14px;
+    font-style: normal;
     letter-spacing: 0.03em;
     color: var(--color-black);
 }
@@ -27,66 +28,6 @@ a {
 
 ul {
     list-style: none;
-}
-
-.h2 {
-    font-size: 36px;
-    text-align: center;
-}
-
-/* header end logo footer*/
-
-.logo {
-    font-size: 26px;
-    font-family: var(--font-family-logo);
-    font-weight: 700;
-    color: black;
-}
-
-.logo span {
-    color: var(--color1);
-}
-
-.header {
-    font-size: 14px;
-    background-color: var(--color-bg2);
-}
-
-.menu a {
-    color: black;
-    font-weight: 500;
-}
-
-.contact-link {
-    font-weight: 500;
-}
-
-.menu-link:hover,
-.contact-link:hover {
-    color: var(--color1);
-}
-
-.menu-link.current{
-    color: var(--color1);
-}
-
-.contact-link {
-    color: var(--color-text);
-}
-
-/* section studio */
-
-.studio {
-    background-color: var(--color-bg);
-    padding: 200px 452px;    
-}
-
-h1 {
-    font-size: 44px;
-    letter-spacing: 0.06em;
-    color: var(--color-white);
-    text-transform: uppercase;
-    
 }
 
 .visually-hidden {
@@ -103,13 +44,70 @@ h1 {
     overflow: hidden;
 }
 
+/* header end logo footer*/
+
+.logo {
+    font-size: 26px;
+    font-family: var(--font-family-logo);
+    font-weight: 700;
+    line-height: 31px;
+    color: black;
+}
+
+.logo span {
+    color: var(--color1);
+}
+
+.menu-link {
+    color: black;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.contact-link {
+    color: var(--color-text);
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.menu-link:hover,
+.contact-link:hover {
+    color: var(--color1);
+}
+
+.menu-link.current{
+    color: var(--color1);
+}
+
+/* section studio */
+
+.studio {
+    background-color: var(--color-bg);
+    padding: 200px 452px;    
+}
+
+.title-h1 {
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 60px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
 .btn-order {
     padding: 20px 30px;
-    font-family: inherit;
+    font-family: var(--font-family-primary);
     font-size: 16px;
     font-weight: 700;
+    font-style: normal;
+    line-height: 5px;
     color: var(--color-white);
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
     border-radius: 4px;
     border: none;
     cursor: pointer;
@@ -118,14 +116,24 @@ h1 {
 
 /* about */
 
-.about-title h3 {    
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 13px;
+.title-h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
 }
 
-.about-title p {
+.title-h3 {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text {
     color: var(--color-text);
+    font-weight: 400;
+    line-height: 24px;
 }
 
 /* work */
@@ -142,15 +150,17 @@ h1 {
     height: 260px;
 }
 
-.contact h3 {
+.contact-title {
+    font-weight: 500;
     font-size: 16px;
-    line-height: 13px;
+    line-height: 19px;
 }
 
-.contact p {
+.contact-text {
     font-size: 16px;
     color: var(--color-text);
     font-weight: 400;
+    line-height: 19px;
 }
 
 
@@ -160,10 +170,10 @@ footer {
     background-color: var(--color-bg);
 }
 
-.adress a {
+.adress-link {
     font-style: normal;
     font-weight: 400;
-    line-height: 1.40;
+    line-height: 24px;
     color: var(--color-text);
 }
 
@@ -182,22 +192,30 @@ footer {
     background-color: var(--color-btn);
     border-radius: 4px;
     border: none;
-    font-family: inherit;
+    font-family: var(--font-family-primary);
     font-size: 16px;
     font-weight: 500;
+    line-height: 26px;
     letter-spacing: 0.03em;
 }
 
 .btn:hover {
     color: var(--color-white);
     background-color: var(--color1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-title {
+    font-weight: 700;
     font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
 }
 
-.portfolio p {
+.portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
     color: var(--color-text);
 }
 
