@@ -17,7 +17,6 @@ body {
     font-family: var(--font-family-primary);
     background-color: var(--color-bg2);
     font-size: 14px;
-    font-style: normal;
     letter-spacing: 0.03em;
     color: var(--color-black);
 }
@@ -50,7 +49,7 @@ ul {
     font-size: 26px;
     font-family: var(--font-family-logo);
     font-weight: 700;
-    line-height: 31px;
+    line-height: 100%;
     color: black;
 }
 
@@ -61,7 +60,7 @@ ul {
 .menu-link {
     color: black;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 100%;
     letter-spacing: 0.02em;
 }
 
@@ -85,10 +84,9 @@ ul {
 
 .studio {
     background-color: var(--color-bg);
-    padding: 200px 452px;    
 }
 
-.title-h1 {
+.title {
     font-size: 44px;
     font-weight: 900;
     letter-spacing: 0.06em;
@@ -116,14 +114,14 @@ ul {
 
 /* about */
 
-.title-h2 {
+.title-two {
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
     text-align: center;
 }
 
-.title-h3 {
+.title-three {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
@@ -165,6 +163,9 @@ ul {
 
 
 /* footer */
+.text-logo-white {
+    color: var(--color-white);
+}
 
 footer {
     background-color: var(--color-bg);
@@ -206,7 +207,8 @@ footer {
 }
 
 .btn:focus {
-    color: var(--color1);
+    color: var(--color-white);
+    background-color: var(--color1);
 }
 
 .portfolio-title {
